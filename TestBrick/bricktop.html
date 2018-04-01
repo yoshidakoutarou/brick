@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>brick｜ホーム</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" rel="stylesheet" type="text/css">
+<link href="css/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+<link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">    <!--[if lt IE 9]><script type="text/javascript" src="/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script></head>
+<body>
+<header>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NNJHVV"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NNJHVV');</script>
+    <!-- End Google Tag Manager -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                                <h1>
+                    <a class="navbar-brand" href="/"><img src="img/logo.png" height="35px" alt="brick"></a>
+                </h1>
+                            </div>
+
+            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                    <!-- システム管理者用 -->
+                                        <li>
+                        <a id="notice_icon" href="/accounts/notice-list"><i class="fa fa-bell"><span style="position: relative; left: -7px; top: -4px; color: red; font-size: 11px;">●</span></i>&nbsp;お知らせ</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i>&nbsp;ユーザー管理<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li >
+                                <a href="/accounts/profile">
+                                    ユーザー情報                                </a>
+                            </li>
+
+                            <li >
+                                <a href="/accounts/customer-information">
+                                    お客様情報                                </a>
+                            </li>
+
+                            <li >
+                                <a href="/accounts/payment">
+                                    お支払い情報                                </a>
+                            </li>
+                            <li >
+                                <a href="/accounts/payment-history">
+                                    お支払い履歴                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/accounts/user-request"><i class="fa fa-comments"></i>&nbsp;ご要望・ご提案</a></li>
+                    <li><a href="/app/contact" target="_blank"><i class="fa fa-question-circle"></i>&nbsp;お問い合わせ</a></li>
+                    <li><a href="/accounts/logout"><i class="fa fa-sign-out"></i>&nbsp;ログアウト</a></li>
+                </ul>
+                                            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <style>
+        @media only screen and (min-width : 768px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+        }
+    </style>
+</header>
+<div class="container-fluid">
+    <div class="row">
+
+    <div id="panels" class="custom_panel">
+        <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <i class="material-icons service-icon">question_answer</i><br>
+                <div class="caption" style="padding-top: 4px;">
+                    <h3 style="font-size: 20px;">サイトレビュー</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/sitereview/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="bricksiteview.html" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <i class="material-icons service-icon">web</i><br>
+                <div class="caption" style="padding-top: 4px;">
+                    <h3 style="font-size: 20px;">ランディングページ</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/lp/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/a3e3034d5b996ede71f3" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <i class="material-icons service-icon">tv</i><br>
+                <div class="caption">
+                    <h3 style="font-size: 20px;">ヒートマップ</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/heatmap/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/7aefd399f68e27ab4dc0" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                    <!--p class="signUp">
+                        <a href="/session/exchange/7aefd399f68e27ab4dc0" class="btn btn-success btn-sm" role="button"><i class="fa fa-sign-in"></i>&nbsp;ツールTOP</a>
+                    </p-->
+                </div>
+            </div>
+        </div>
+
+        <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+              <i class="material-icons service-icon">note_add</i><br>
+                <div class="caption">
+                    <h3 style="font-size: 20px;">アクセス解析レポート</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/autoreport-excel/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <!--
+                    <p>
+                        <a href="/maintenance/maintenance.html" class="btn btn-primary btn-sm" role="button"><i class="fa fa-sign-in"></i>&nbsp;ツールTOP</a>
+                    </p>
+                    -->
+                    <p>
+                        <a href="/session/exchange/8323abf8ded9386d42ad" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                    <!--p class="signUp">
+                        <a href="/session/exchange/8323abf8ded9386d42ad" class="btn btn-success btn-sm" role="button"><i class="fa fa-sign-in"></i>&nbsp;ツールTOP</a>
+                    </p-->
+                </div>
+            </div>
+        </div>
+
+        <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <div class="newTag">
+                  <i class="material-icons service-icon">chat</i><br>
+                    <div class="caption">
+                        <h3 style="font-size: 20px;">アクセス解析レポート<br>（期間指定）</h3>
+                        <p>
+                            <a href="https://www.brick.tools/applications/autoreport-excel/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                        </p>
+                        <p>
+                            <a href="/session/exchange/82a9b655537dcf8e5f20" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                        </p>
+                    </div>
+                    <p class="newTagTxt"><span>NEW</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <div class="updateTag">
+                    <i class="material-icons service-icon">subject</i><br>
+                    <div class="caption">
+                        <h3 style="font-size: 20px;">ファネル分析</h3>
+                        <p>
+                            <a href="https://www.brick.tools/applications/funnel/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                        </p>
+                        <p>
+                            <a href="/session/exchange/65e701b7d6f6430149b7" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                        </p>
+                        <!--p class="signUp">
+                            <a href="/session/exchange/65e701b7d6f6430149b7" class="btn btn-success btn-sm" role="button"><i class="fa fa-sign-in"></i>&nbsp;ツールTOP</a>
+                        </p-->
+                    </div>
+                    <p class="updateTagTxt"><span>UPDATE</span></p>
+                </div>
+            </div>
+        </div>
+
+                <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <i class="material-icons service-icon">domain</i><br>
+                <div class="caption" style="padding-top: 4px;">
+                    <h3 style="font-size: 20px;">訪問企業計測</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/companylog/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/65365ce2a2605c367c01" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                <div class="mix blockW sign">
+            <div class="thumbnail text-center ">
+                <i class="material-icons service-icon">donut_small</i><br>
+                <div class="caption">
+                    <h3 style="font-size: 20px;">効果測定レポート</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/measurement/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/12e641c672431920ad83" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <i class="material-icons service-icon">person_pin</i><br>
+                <div class="caption" style="padding-top: 4px;">
+                    <h3 style="font-size: 20px;">コンシェルジュ</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/concierge/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/60fa5903ba2763ed9752" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <i class="material-icons service-icon">send</i><br>
+                <div class="caption" style="padding-top: 4px;">
+                    <h3 style="font-size: 20px;">プッシュ通知</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/webpush/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/227058180ba330dcf583" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                <div class="mix blockW sign">
+            <div class="thumbnail text-center ">
+                <i class="material-icons service-icon">local_grocery_store</i><br>
+                <div class="caption" style="padding-top: 4px;">
+                    <h3 style="font-size: 20px;">LTV分析</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/ltv/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/189cc9cc1d96f24e90c0" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+              <i class="material-icons service-icon">trending_up</i><br>
+                <div class="caption">
+                    <h3 style="font-size: 20px;">傾向分析</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/now/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/250e93d4279830f35fcf" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mix blockW sign">
+            <div class="thumbnail text-center">
+                <i class="material-icons service-icon">mode_edit</i><br>
+                <div class="caption">
+                    <h3 style="font-size: 20px;">パラメータ付きURL生成</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/urlencode/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/5ff32aaf0aa7d47a30d4" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                    <!--p class="signUp">
+                        <a href="/session/exchange/5ff32aaf0aa7d47a30d4" class="btn btn-success btn-sm" role="button"><i class="fa fa-sign-in"></i>&nbsp;ツールTOP</a>
+                    </p-->
+                </div>
+            </div>
+        </div>
+
+        <div class="mix blockW nosign">
+            <div class="thumbnail text-center">
+              <i class="material-icons service-icon">poll</i><br>
+                <div class="caption">
+                    <h3 style="font-size: 20px;">Facebook 広告レポート</h3>
+                    <p>
+                        <a href="https://www.brick.tools/applications/facebook-ad/" target="_blank">詳細を見る <i class="fa fa-external-link"></i></a>
+                    </p>
+                    <p>
+                        <a href="/session/exchange/8db339228f79044e8215" class="btn btn-primary btn-sm" role="button"><i class="material-icons">format_indent_increase</i>&nbsp;ツールTOP</a>
+                    </p>
+                    </p-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="js/anim20151204.js" type="text/javascript" charset="UTF-8"></script>
+
+<script>
+$(function(){
+    $('#panels').mixItUp({
+        animation: {
+            effects: 'fade stagger(150ms)',
+            staggerSequence: function(i){
+                return (2*i) - (5*((i/3) - ((1/3) * (i%3))));
+            }
+        }
+    });
+});
+</script>
+
+<style>
+#panels .mix{
+    display: none;
+}
+
+.custom_panel{
+    position: relative;
+    min-height: 650px;
+    background-color: #f9f8f7;
+}
+</style>
+</div><!-- /container -->
+<div class="col-md-12" id="footer">
+    <div class="row">
+        <footer class="text-center">
+            <p>&copy; 2014 - 2018 TechLoCo,Inc. All rights reserved.</p>
+        </footer>
+    </div>
+</div>
+
+
+<div id="testCode0" class="testCode">Accounts</div>
+<div id="testCode1" class="testCode">Index</div>
+<div id="testCode2" class="testCode">index</div>
+
+<script type="text/javascript">
+$("#brick_pigs_notice").click(function() {
+    ga("create", "UA-59414640-1");
+    ga('send', 'event', 'buta', 'click', '1-year-campaign');
+});
+//</script>
+
+</body>
+</html>

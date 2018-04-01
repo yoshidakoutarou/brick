@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>brick｜ホーム</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" rel="stylesheet" type="text/css">
+<link href="../css/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="../css/style.css" media="all" rel="stylesheet" type="text/css">
+<link href="../img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">    <!--[if lt IE 9]><script type="text/javascript" src="/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/jquery.mixitup.min.js"></script></head>
+<body>
+<header>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NNJHVV"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NNJHVV');</script>
+    <!-- End Google Tag Manager -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                                <h1>
+                    <a class="navbar-brand" href="/"><img src="../img/logo.png" height="35px" alt="brick"></a>
+                </h1>
+                            </div>
+
+            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                    <!-- システム管理者用 -->
+                                        <li>
+                        <a id="notice_icon" href="/accounts/notice-list"><i class="fa fa-bell"></i>&nbsp;お知らせ</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i>&nbsp;ユーザー管理<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li >
+                                <a href="/accounts/profile">
+                                    ユーザー情報                                </a>
+                            </li>
+
+                            <li >
+                                <a href="/accounts/customer-information">
+                                    お客様情報                                </a>
+                            </li>
+
+                            <li >
+                                <a href="/accounts/payment">
+                                    お支払い情報                                </a>
+                            </li>
+                            <li >
+                                <a href="/accounts/payment-history">
+                                    お支払い履歴                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/accounts/user-request"><i class="fa fa-comments"></i>&nbsp;ご要望・ご提案</a></li>
+                    <li><a href="/app/contact" target="_blank"><i class="fa fa-question-circle"></i>&nbsp;お問い合わせ</a></li>
+                    <li><a href="/accounts/logout"><i class="fa fa-sign-out"></i>&nbsp;ログアウト</a></li>
+                </ul>
+                                            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <style>
+        @media only screen and (min-width : 768px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+        }
+    </style>
+</header>
+<div class="container-fluid">
+    <div class="container-fluid">
+    <!--div class="col-md-12 text-center">
+    <img src="/img/logo_signin.png" height="80px">
+    </div-->
+    <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    <h2><i class="fa fa-sign-in"></i>&nbsp;ログイン</h2>
+    </div>
+    <div class="panel-body">
+        <form action="/user-account/authenticate" method="post" class="form-horizontal">
+        <div class="form-group ">
+	         <div class="col-xs-12">
+	            <div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input type="text" class="form-control" name="email" value="" placeholder="mail address" />
+								</div>
+                	            </div>
+						</div>
+        <div class="form-group ">
+	         <div class="col-xs-12">
+	            <div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-key"></i></span>
+                    <input type="password" class="form-control" name="password" value="" placeholder="Password" />
+								</div>
+                	            </div>
+						</div>
+
+                        <div class="form-group">
+                <div class="col-sm-12 text-center">
+                    <button type="submit" data-loading-text="ログイン..."  class="btn-state btn btn-primary"><i class="fa fa-sign-in"></i>&nbsp;ログイン</button>
+                <a href="/user-account/recover-password-request" class="btn btn-default"><i class="fa fa-refresh"></i>&nbsp;パスワード再設定</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+        <div class="text-center" style="margin:10px 0; font-size:20px; font-weight: bolder;">or</div>
+
+    <div class="panel panel-default">
+    <div class="panel-body">
+        <div class="text-center">
+            <a href="/user-account/signin-with-google" class="btn btn-primary btn-block" style="margin-bottom: 10px;"><i class="fa fa-google"></i>&nbsp;利用規約に同意してGoogle アカウントでログイン</a>
+            <a href="https://www.brick.tools/terms/" target="_blank">利用規約はこちら<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+
+</div><!-- /container -->
+<div class="col-md-12" id="footer">
+    <div class="row">
+        <footer class="text-center">
+            <p>&copy; 2014 - 2018 TechLoCo,Inc. All rights reserved.</p>
+        </footer>
+    </div>
+</div>
+
+
+<div id="testCode0" class="testCode">UserAccount</div>
+<div id="testCode1" class="testCode">Index</div>
+<div id="testCode2" class="testCode">signIn</div>
+
+<script type="text/javascript">
+$("#brick_pigs_notice").click(function() {
+    ga("create", "UA-59414640-1");
+    ga('send', 'event', 'buta', 'click', '1-year-campaign');
+});
+//</script>
+
+</body>
+</html>
